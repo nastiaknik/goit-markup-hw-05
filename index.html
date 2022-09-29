@@ -88,7 +88,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="btn-service" type="button">Замовити послугу</button>
+          <button class="btn-service" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="features">
@@ -149,29 +151,32 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list">
-            <li class="list-item">
+            <li class="list-item thumb-img">
               <img
-                src="./images/box1.jpg"
+                src="./images/index/box1.jpg"
                 alt="Руки на клавітурі"
                 width="370"
                 height="294"
               />
+              <p class="overlay-descr">Десктопні додатки</p>
             </li>
-            <li class="list-item">
+            <li class="list-item thumb-img">
               <img
-                src="./images/box2.jpg"
+                src="./images/index/box2.jpg"
                 alt="Семантична розмітка контенту на екрані телефона"
                 width="370"
                 height="294"
               />
+              <p class="overlay-descr">Мобільні додатки</p>
             </li>
-            <li class="list-item">
+            <li class="list-item thumb-img">
               <img
-                src="./images/box3.jpg"
+                src="./images/index/box3.jpg"
                 alt="Кругова палітра кольорів"
                 width="370"
                 height="294"
               />
+              <p class="overlay-descr">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -182,7 +187,7 @@
           <ul class="list">
             <li class="list-item card">
               <img
-                src="./images/team1.jpg"
+                src="./images/index/team1.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
                 height="260"
@@ -224,7 +229,7 @@
             </li>
             <li class="list-item card">
               <img
-                src="./images/team2.jpg"
+                src="./images/index/team2.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
                 height="260"
@@ -266,7 +271,7 @@
             </li>
             <li class="list-item card">
               <img
-                src="./images/team3.jpg"
+                src="./images/index/team3.jpg"
                 alt="Микола Тарасов"
                 width="270"
                 height="260"
@@ -308,7 +313,7 @@
             </li>
             <li class="list-item card">
               <img
-                src="./images/team4.jpg"
+                src="./images/index/team4.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
                 height="260"
@@ -469,5 +474,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
